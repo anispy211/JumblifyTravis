@@ -22,6 +22,8 @@
 - (NSString *)reverseString:(NSString *)stringToReverse
 {
     NSMutableString *reversedString = [NSMutableString stringWithCapacity:[stringToReverse length]];
+    
+    NSLog(@"Hi");
 
     [stringToReverse enumerateSubstringsInRange:NSMakeRange(0,[stringToReverse length])
                                         options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences)
